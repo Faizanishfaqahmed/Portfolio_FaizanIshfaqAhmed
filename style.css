@@ -820,8 +820,8 @@ margin-top:70px;
     border-radius: 0.5rem;
 }
 .bloba{
-    height:20%;
-    width:20%;
+    height:40%;
+    width:40%;
     background:blueviolet;
     border-radius: 53% 47% 53% 47% / 63% 60% 40% 37% ;
     position:absolute;
@@ -831,8 +831,8 @@ margin-top:70px;
     opacity:0.2;
 }
 .blobb{
-    height:20%;
-    width:20%;
+    height:40%;
+    width:40%;
     background:blue;
     border-radius: 53% 47% 53% 47% / 63% 60% 40% 37% ;
     position:absolute;
