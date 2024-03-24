@@ -8,17 +8,3 @@ backDelay : 1000,
 loop:true
 });
 
-let Hour = new Date().getHours();
-console.log(Hour);
-
-let minutes, seconds, currentTime, selectedTime;
-minutes=new Date().getMinutes();
-seconds = new Date().getSeconds();
-currentTime = Hour +" "+ minutes+" " +seconds;
-console.log(currentTime);
-
-selectedTime = 7 +" "+ 46 +" " + seconds;
-if (selectedTime === currentTime){
-    alert("Time is go to office");
-    window.location.href="./images/Responsive Web Design.png"
-}
