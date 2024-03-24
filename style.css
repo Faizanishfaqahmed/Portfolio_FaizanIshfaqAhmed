@@ -855,10 +855,10 @@ margin-top:70px;
     100%{margin-top: 400px; margin-left:500px; border-radius: 57% 39% 69% 23% / 68% 14% 39% 23%  ;}
     80%{margin-top: 300px; margin-left:800px; border-radius: 57% 39% 16% 23% / 25% 14% 39% 23%  ;}
     70%{margin-top: 200px; margin-left:900px; border-radius: 36% 64% 87% 13% / 33% 20% 80% 67% ;}
-    50%{margin-top: 100px; margin-left:1000px; border-radius: 57% 39% 16% 23% / 25% 14% 55% 66%   ;}
+    50%{margin-top: 100px; margin-left:800px; border-radius: 57% 39% 16% 23% / 25% 14% 55% 66%   ;}
 }
 @keyframes blobb {
-    0%{margin-top: 0; margin-left:1000px; border-radius: 53% 47% 53% 47% / 63% 60% 40% 37%;}
+    0%{margin-top: 0; margin-left:400px; border-radius: 53% 47% 53% 47% / 63% 60% 40% 37%;}
     10%{margin-top: 5px; margin-left:900px; border-radius: 36% 64% 87% 13% / 33% 20% 80% 67% ;}
     20%{margin-top: 50px; margin-left:800px; border-radius: 36% 64% 87% 13% / 33% 55% 45% 67%  ;}
     50%{margin-top: 100px; margin-left:600px; border-radius: 36% 64% 49% 51% / 33% 49% 51% 67%  ;}
