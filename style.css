@@ -9,6 +9,7 @@
 body {
     color: #ededed;
     background: #010101;
+    overflow-x: hidden;
 }
 
 .header {
@@ -74,7 +75,7 @@ body {
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 200%;
     font-weight: 700;
     margin-top: 2px;
     opacity: 0;
@@ -94,7 +95,7 @@ body {
 }
 
 .home-content h1 {
-    font-size: 56px;
+    font-size:3.7rem;
     font-weight: 700;
     margin: -3px 0;
     opacity: 0;
@@ -269,7 +270,6 @@ padding-bottom: 70px;
     border-radius: 20px;
     box-shadow:1px 1px 20px #012290f7,
     1px 1px 40px #0053b8;
-    ;
     transition : background 0.5s, transform 0.5s;
     cursor:pointer;
 }
@@ -277,8 +277,8 @@ padding-bottom: 70px;
 transform: translateY(-10px); 
 
 }
-.services-list div:hover p{
-    transform:scale(1.1);
+.services-list p{
+    margin-bottom: 10%;
 }
 .services-list div i{
     font-size: 50px;
@@ -325,7 +325,26 @@ transform: translateY(-10px);
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan, 0 0 200px cyan
 }
-
+.ser-btn{
+    display:inline-block;
+    padding : 12px 28px;
+    background:cyan;
+    border-radius: 40px;
+    color:#081b29;
+    letter-spacing:1px;
+    text-decoration:none;
+    font-weight:600;
+    opacity:0;
+    animation: slideTop .6s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan;
+}
+.ser-btnactive{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
 /*Skills*/
 .sub-title{
     margin-bottom: -40px;
@@ -841,6 +860,21 @@ margin-top:70px;
     animation-duration: 60s;
     opacity:0.2;
 }
+.menue{
+    display:none;
+    margin-right:45%;
+    border-radius: 10px;
+}
+
+.dropdown{
+    opacity: 0;
+    transition: 3s;
+    display: none;
+}
+.details{
+    display:none;
+}
+
 /*Animations*/
 @keyframes bloba {
     0%{margin-top: 0; left:0; border-radius: 53% 47% 53% 47% / 63% 60% 40% 37%;}
@@ -976,4 +1010,214 @@ margin-top:70px;
     100% {
         margin-top: -1rem;
     }
+}
+
+@keyframes moveDown{
+    0%{
+        opacity:0;
+        transform: translateY(-100);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(100);
+        
+    }
+}
+
+/*media quries*/
+@media only screen and (max-width:667px){
+    body{
+      overflow-x: hidden;
+    }
+  .navbar{
+    display:none;
+
+  }
+  .dropdown{
+    display:none;
+    flex-direction: column;
+    position:absolute;
+    background: rgb(201, 194, 194);
+    top:80%;
+    text-align:center;
+    width:150px;
+    justify-content:center;
+    right:38%;
+    border-radius:29px;
+ 
+   
+}
+.dropdown a{
+    text-decoration: none;
+    color:darkblue;
+    margin-top:15px;
+    margin-left:0;
+    width:100%;
+    height:25px;
+    font-weight:800;
+}
+.dropdown a:hover{
+    background: cyan;
+    color:rgb(4, 4, 17);
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+
+  
+  .menue{
+    display:flex;
+} 
+
+.home-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+   
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+}
+.home-content h1 {
+    font-size:2rem;
+    font-weight: 700;
+    
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: 1s;
+}
+.active{
+   
+    animation: moveDown ease forwards;
+    display:flex;
+   
+}
+
+  @keyframes bloba {
+    0%{ border-radius: 53% 47% 53% 47% / 63% 60% 40% 37%;}
+    5%{ border-radius: 36% 64% 87% 13% / 33% 20% 80% 67%}
+    7%{ border-radius: 53% 47% 53% 47% / 63% 60% 40% 37%;}
+    10%{ border-radius: 36% 64% 87% 13% / 33% 20% 80% 67% ;}
+    20%{ border-radius: 36% 64% 87% 13% / 33% 55% 45% 67%  ;}
+    15%{ border-radius: 53% 47% 53% 47% / 63% 60% 40% 37%;}
+    50%{ border-radius: 36% 64% 49% 51% / 33% 49% 51% 67%  ;}
+    70%{ border-radius: 36% 64% 81% 19% / 33% 49% 51% 67%  ;}
+    80%{ border-radius:34% 53% 39% 50% / 63% 48% 37% 29%  ;}
+    100%{ border-radius: 57% 39% 69% 23% / 68% 14% 39% 23%  ;}
+    80%{ border-radius: 57% 39% 16% 23% / 25% 14% 39% 23%  ;}
+    70%{margin-top: 0px; margin-left:6px; border-radius: 36% 64% 87% 13% / 33% 20% 80% 67% ;}
+    50%{margin-top: 10px; margin-left:3px; border-radius: 57% 39% 16% 23% / 25% 14% 55% 66%   ;}
+}
+@keyframes blobb {
+    0%{ border-radius: 53% 47% 53% 47% / 63% 60% 40% 37%;}
+    10%{margin-top: 5px; margin-left:6px; border-radius: 36% 64% 87% 13% / 33% 20% 80% 67% ;}
+    20%{margin-top: 10px; margin-left:5px; border-radius: 36% 64% 87% 13% / 33% 55% 45% 67%  ;}
+    50%{margin-top: 4px; margin-left:6px; border-radius: 36% 64% 49% 51% / 33% 49% 51% 67%  ;}
+    70%{margin-top: 2px; margin-left:10px; border-radius: 36% 64% 81% 19% / 33% 49% 51% 67%  ;}
+    80%{margin-top: 4px; margin-left:4px; border-radius:34% 53% 39% 50% / 63% 48% 37% 29%  ;}
+    100%{margin-top: 5px; margin-left:3px; border-radius: 57% 39% 69% 23% / 68% 14% 39% 23%  ;}
+    80%{margin-top: 10px; margin-left:10px; border-radius: 57% 39% 16% 23% / 25% 14% 39% 23%  ;}
+    70%{margin-top: 0px; margin-left:20px; border-radius: 36% 64% 87% 13% / 33% 20% 80% 67% ;}
+    50%{margin-top: 5px; margin-left:3px; border-radius: 57% 39% 16% 23% / 25% 14% 55% 66%  ;}
+}
+.bloba{
+    height:40%;
+    width:40%;
+    background:blueviolet;
+    border-radius: 53% 47% 53% 47% / 63% 60% 40% 37% ;
+    position:absolute;
+    z-index: -50;
+    animation: bloba 1s linear infinite alternate-reverse;
+    animation-duration: 60s;
+    opacity:0.2;
+}
+.blobb{
+    height:40%;
+    width:40%;
+    background:blue;
+    border-radius: 53% 47% 53% 47% / 63% 60% 40% 37% ;
+    position:absolute;
+    z-index: -50;
+    animation: blobb 1s linear infinite alternate;
+    animation-duration: 60s;
+    opacity:0.2;
+}
+.my-img{
+    position:absolute;
+    top:15%;
+    left:10%;
+    }
+    .myimg{
+        width:80%;
+        height:80%;
+    }
+    .myimg:hover {
+        height: 80%;
+        width: 80%;
+        box-shadow: 0 0 5px cyan,
+            0 0 25px orange, 0 0 60px yellow,
+            0 0 140px red, 0 0 200px blue;
+            margin-left:30%;
+    }
+
+
+.home-content{
+    margin-top: 55%;
+}
+    .about-img{
+        display:none;
+        
+    }
+    .about{
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        width:100%;
+        padding-left: 5%;
+       
+    }
+    .about p{
+        margin-top: 60px;
+    }
+    .details{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:rgb(255, 252, 252);
+        background: cyan;
+        border-radius: 20px;
+        position: absolute;
+        top: 130%;      
+        left: 10%; 
+        bottom: 20%; 
+        
+    }
+
+    .about-p{
+        display:none;
+    }
+    .p-active{
+        display:flex;
+    }
+    .sub-title{
+        margin-left:-100px;
+    }
+    .card-text{
+        display:none;
+    }
+    .cardText-active{
+        display: flex;  
+    }
+   
+    .boxes{
+        margin-left: -100px;
+    }
+    .heading1{
+        
+        margin-left:-13px;
+        margin-bottom:15px;
+    }
+
+
 }
