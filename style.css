@@ -77,7 +77,7 @@ gap:1vw;
     position: relative;
     width: 100vmax;
     justify-content: space-between;
-    height: 100vh;
+    height: 100vmin;
     background: url(./images/bc.jpg) no-repeat;
     background-size:cover;
     background-position: center;
@@ -85,8 +85,13 @@ gap:1vw;
     align-items: center;
     padding: 7vmin 10vmax;
     text-align: justify;
+ 
 
    
+}
+.home-content{
+   
+    width:20
 }
 
 .home-content {
@@ -888,6 +893,7 @@ margin-top:70px;
     bottom:2.1rem;
     right:2.1vmax;
 
+width:8vmax;
 
 }
 .top i{
@@ -897,6 +903,7 @@ margin-top:70px;
     font-weight: 800;
     padding:10px;
     border-radius: 0.5rem;
+   
 }
 
     
@@ -910,15 +917,9 @@ margin-top:70px;
     animation: bloba 1s linear infinite alternate-reverse;
     animation-duration: 60s;
     opacity:0.2;
-    border:4px solid red;
+   
 }
-.bolob-cont{
-    height: 50dvw;
-    width:50dvw;
-    z-index: -50;
-    animation: blobb 1s linear infinite alternate;
-    animation-duration: 60s;
-}
+
 .blobb{
     height:30dvw;
     width:30dvw;
@@ -929,17 +930,20 @@ margin-top:70px;
     animation: blobb 1s linear infinite alternate;
     animation-duration: 60s;
     opacity:0.2;
+    border:4px solid red;
 }
 .menue{
     display:none;
     margin-right:45%;
     border-radius: 10px;
+
 }
 
 .dropdown{
     opacity: 0;
     transition: 3s;
     display: none;
+   
 }
 .details{
     display:none;
@@ -1111,6 +1115,7 @@ margin-top:70px;
 @media only screen and (max-width:800px){
     body{
       overflow-x: hidden;
+      
     }
   .navbar{
     display:none;
@@ -1118,7 +1123,7 @@ margin-top:70px;
   }
   .top{
     position:fixed;
-    bottom:2.1rem;
+    bottom:2.1vmin;
     right:2.1vmax;
 
 
@@ -1133,9 +1138,8 @@ margin-top:70px;
     text-align:center;
     width:150px;
     justify-content:center;
-   
     border-radius:29px;
-    right: 2vmax;
+    right: 4vmax;
    
 }
 .dropdown a{
@@ -1171,13 +1175,33 @@ margin-top:70px;
 
     }
     .home{
-        margin-bottom: 50%;
+        position: relative;
+    width: 55vmax;
+    justify-content: space-between;
+    height:200vmin;
+    background: url(./images/bc.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 7vmin 10vmax;
+    text-align: justify;
+   
+    margin-top:10vmin;
     }
+    .home-content{
+        
+        width:55vmax;
+        margin-top:50vmin;
+        margin-left:-8vmax;
+    }
+    
+   
 .home-content h1 {
     font-size:2rem;
     font-weight: 700;
-    
-    margin: -3px 0;
+    margin-top:1vmin;
+    margin: 2vmin 0;
     opacity: 0;
     animation: slideTop .5s ease forwards;
     animation-delay: 1s;
@@ -1242,10 +1266,12 @@ margin-top:70px;
     position:absolute;
     top:15%;
     left:10%;
+ 
     }
     .myimg{
         width:80%;
         height:80%;
+       
     }
     .myimg:hover {
         height: 80%;
@@ -1259,7 +1285,9 @@ margin-top:70px;
 
 .home-content{
     margin-top: 55%;
+
 }
+
     .about-img{
         display:none;
         
@@ -1274,6 +1302,7 @@ margin-top:70px;
     }
     .about p{
         margin-top: 60px;
+       
     }
     .details{
         display:flex;
@@ -1282,7 +1311,10 @@ margin-top:70px;
         color:rgb(255, 252, 252);
         background: cyan;
         border-radius: 20px;
-       
+        border:4px solid blue;
+    }
+    html{
+        overflow-x:hidden;
     }
 .row{
     margin-top:5vh;
@@ -1358,7 +1390,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vmax;
+    width: 55vmax;
     padding: 20px 10%;
     background: #051129;
     display: flex;
@@ -1371,5 +1403,74 @@ body{
     width:40vmax;
     background:4px solid red;
 }
+
+.services-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px, 1fr));
+    grid-gap:40px;
+    margin:50px;
+   text-align:justify;
 }
 
+.services-list div{
+    background: transparent;
+    padding:40px;
+    font-size:13px;
+    font-weight: 13px;
+    border-right:10px;
+    border-radius: 20px;
+    box-shadow:1px 1px 20px #012290f7,
+    1px 1px 40px #0053b8;
+    transition : background 0.5s, transform 0.5s;
+    cursor:pointer;
+}
+.services-list div:hover{
+transform: translateY(-10px); 
+
+}
+.services-list p{
+    margin-bottom: 12vmin;
+    width:38vmax
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom:30px;
+
+}
+#services{
+    color:aliceblue;
+    line-height: 1.4;
+    font-size: 20px;
+    margin-bottom: 4vmin;
+    
+    }
+.services-list div h2{
+    font-size:30px;
+    font-weight:500;
+    margin:15px;
+
+}
+.services-list div a{
+    text-decoration:none;
+    color:#000000;
+    font-size:12px;
+    margin-top:20px;
+    display:inline-block;
+}
+.boxes{
+    width:47vmax;
+}
+.row{
+    width:40vmax; 
+}
+.headings-size{
+    width:40vmax; 
+
+    font-size:8vmax;
+    margin-left:1vmax;
+
+}
+
+
+
+}
