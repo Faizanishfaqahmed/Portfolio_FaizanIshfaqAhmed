@@ -30,8 +30,11 @@ body {
 }
 .headings-size{
     font-size: 5vmax;
-    width:30vmax;
+    width:80vmax;
 
+}
+.about-txt{
+    font-size: 5vmax; 
 }
 
 
@@ -1292,6 +1295,7 @@ margin-top:70px;
     }
     .sub-title{
         margin-left:-100px;
+        text-align: center;
     }
     .card-text{
         display:none;
