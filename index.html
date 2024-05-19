@@ -36,7 +36,7 @@
 
 
     </header>
-    <section class="home" id="home"  >
+    <div class="home" id="home"  >
         <div class="home-content"> 
             <h3>Hi Its me</h3>
             <h1>Faizan Ishfaq Ahmed</h1>
@@ -62,8 +62,9 @@
         <div class="my-img">
             <img src="./images/mypic.jpg" class="myimg"/>
         </div>
-
+    </div>
     </section>
+    
     <div class="bloba"></div>
 <!---About me section-->
 
@@ -72,12 +73,13 @@
         <div class="about-img">
             <img src="./images/mypic.jpg" alt="" class="my-pic"/>
         </div>
-        <div class="details" >
-            <button class="btn-box detail" onClick="aboutClick()">Details About Me</button>
-        </div>
+        
         <div class="about-text">
-            <h2>About <span>Me</span></h2>
+            <h2 class="headings-size">About <span>Me</span></h2>
             <h4>FullStack Developer</h4>
+            <div  >
+                <button class="btn-box detail" onClick="aboutClick()">Details About Me</button>
+            </div>
             <div class="about-p">
                 <p>Greetings! I'm Faizan, a dedicated web developer with a passion for transforming ideas into exceptional digital experiences.
                     With a background in FullStack Development, I've cultivated a deep understanding of frontend and backend technologies, 
@@ -105,7 +107,7 @@
     <div class="bloba"></div>
     <div class="services" id="services">
         <div class="container">
-            <h1 class="sub-title">My <span>Services</span></h1>
+            <h1 class="sub-title headings-size">My <span>Services</span></h1>
             <div class="services-list">
                 <div class="boxes">
                     <i class='bx bx-code' style="color:cyan"></i>
@@ -165,12 +167,13 @@
     </div>
 </section>
 <!--Skills section-->
-<h1 class="sub-title" id="skills">My<span>Skills</span></h1>
-<section >
+<h1 class="sub-title headings-size" id="skills">My<span>Skills</span></h1>
+<section class="skills-sec ">
     <div class="blobb"></div>
     <div class="bloba"></div>
-    <div class="container1" >
-        <h1 class="heading1">Technical Skills</h1>
+    <div class="tech-sec" >
+    
+        <h1 class="heading1 ">Technical Skills</h1>
 <div class="Technical-bars">
     <div class="bar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:#c95d2e;"><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"></path></svg>
         <div class="info">
@@ -272,8 +275,8 @@
 
 </div>
 
-<div class="container1">
-    <h1 class="heading1">Professional Skills</h1>
+<div class="skill container-1">
+    <h1 class="heading1 head2">Professional Skills</h1>
     <div class="Radial-bars">
         <div class="Radial-bar">
             <svg x="0px" y="0px" viewBox="0 0 200 200">
@@ -320,7 +323,7 @@
     
     <div id="portfolio" id="project">
         <div class="main-text" id="project">
-            <h2>Latest <span>Projects</span></h2>
+            <h2 class="headings-size">Latest <span>Projects</span></h2>
 
             <div class="portfolio-content">
                 <div class="row">
@@ -381,7 +384,7 @@
     <div class="blobb"></div>
     <div class="bloba"></div>
     <div class="certi-container">
-        <h2>My <span>Certificates</span></h2>
+        <h2 class="headings-size">My <span>Certificates</span></h2>
         <div class="main-certi">
             <a href="http://127.0.0.1:5500/index.html#certificates"> <div class="certi-card">
               <img src="./images/CFW.jpg" alt="">
@@ -416,8 +419,11 @@
 <section class="contact" id="contacts">
     <div class="blobb"></div>
     <div class="bloba"></div>
+    
     <div class="text-contact">
-        <h2>Contact <span>Me</span></h2>
+        <h2 class="headings-size">Contact <span>Me</span></h2>
+        <div class="textCont-sec">
+        <div class="texts-con">
         <h4>Lets build future Together</h4>
         <p>"Have a question or need assistance? Feel free to reach out to us at any time. 
             We're here to help make your shopping experience exceptional.
@@ -428,6 +434,7 @@
             <li><i class="bx bxs-send" style="color:#00eeff"></i></i>faizanishfaqahmed@gmail.com</li>
             <li><i class="bx bxs-phone" style="color:#00eeff"></i>0333-5461729</li>
          </div>
+         
          <div class="contact-icons">
             <a href="https://www.facebook.com/faizan.ishfaqahmed/"><i class="bx bxl-facebook-circle"></i></a>
             <a href=""><i class="bx bxl-twitter"></i></a>
@@ -439,15 +446,15 @@
     
     <div class="contact-form">
         <form action="">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Enter Your Email" required>
-            <input type="text" placeholder="Enter your Subject">
-            <textarea name="" id="" cols="40" rows="10" placeholder="Enter your meassage" required>
+            <input type="text" placeholder="Name" required class="input-txt">
+            <input type="email" placeholder="Enter Your Email" required class="input-txt">
+            <input type="text" placeholder="Enter your Subject " class="input-txt">
+            <textarea name="" id="" cols="40" rows="10" placeholder="Enter your meassage" required class="txt-area">
             </textarea>
             <input type="submit" value="Submit" class="send">
         </form>
-    </div>
-
+    </div></div>
+</div></div></div>
 </section>
 
 
