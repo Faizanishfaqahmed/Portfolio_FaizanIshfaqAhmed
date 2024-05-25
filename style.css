@@ -1125,6 +1125,10 @@ width:8vmax;
         overflow-x: hidden;
         
     }
+    body{
+        overflow-x: hidden;
+        
+    }
    
     .navbar{
         display:none;
@@ -1194,7 +1198,7 @@ border:2px solid red;
         
     }
     .home-content{
-        width:90%;
+        width:90vw;
         margin-left:-50vw;
         margin-top:15vh;
     }
@@ -1204,7 +1208,7 @@ border:2px solid red;
        justify-content:center ;
        position:absolute;
         margin-left:-90vw;
-        margin-top:-35vh;
+        margin-top:-55vh;
         transition:10s;
        
     }
@@ -1288,7 +1292,7 @@ margin-left: -10px;
 .menue{
     display:flex;
     position:absolute;
-    right: -25vw;
+    right: 25vw;
     background-color:rgb(201, 194, 194);
     
 }
