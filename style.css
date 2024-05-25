@@ -1173,6 +1173,7 @@ border:2px solid red;
         display:flex;
        
         width:100%;
+        margin-bottom:10vh;
 
     }
     .navbar{
@@ -1189,10 +1190,11 @@ border:2px solid red;
         display:flex;
         align-items: center;
         justify-content: center;
+        margin-top: 10vh;
         
     }
     .home-content{
-        
+        width:90%;
         margin-left:-50vw;
         margin-top:15vh;
     }
@@ -1357,8 +1359,8 @@ border:2px solid red;
    align-items: center;
    justify-content:center ;
    position:absolute;
-    margin-left:-40vw;
-    margin-top:-20vh;
+    margin-left:-50vw;
+    margin-top:-35vh;
     transition:10s;
    
 }
@@ -1498,7 +1500,7 @@ border:2px solid red;
    margin-left: 15px;
 }
 .contact-icons a{
-margin-left: 10px;
+margin-left:-10px;
 }
 /*Headings*/
 .headings-size{
