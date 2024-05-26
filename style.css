@@ -1194,20 +1194,20 @@ border:2px solid red;
         display:flex;
         align-items: center;
         justify-content: center;
-        margin-top: 10vh;
+        margin-top: 15vh;
         
     }
     .home-content{
         width:90vw;
-        margin-left:-50vw;
-        margin-top:15vh;
+        margin-left:-35vw;
+        margin-top:30vh;
     }
     .my-img{
        display:flex;
        align-items: center;
        justify-content:center ;
        position:absolute;
-        margin-left:-90vw;
+        margin-left:-60vw;
         margin-top:-55vh;
         transition:10s;
        
@@ -1244,12 +1244,13 @@ border:2px solid red;
     align-items:center;
     flex-direction:column;
    flex-wrap:wrap;
+
   
 }
 .row{
     width:80vw;
     margin-right:20vw;
-    margin-left:-10vw;
+   
     margin-top:1vh;
     margin-bottom:1vh;
 
